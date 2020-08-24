@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="color_letras">#3B000000</color>
+    <color name="color_background_main_activity">#AE27C89A</color>
+    <color name="color_titulo">#B21B3029</color>
+    <color name="back_fecha">#B200FBA8</color>
+    <color name="datos_letras">#2979FF</color>
+    <color name="color_boton">#8FE1CC</color>
+    <color name="texto_boton_color">#D7090909</color>
+
+</resources>

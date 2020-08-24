@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_main_activity"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/mititulo"
+        android:textAlignment="center"
+        android:textColor="@color/color_titulo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16sp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_titulo"
+        android:layout_marginStart="16sp"
+        app:errorEnabled="true"
+        android:layout_marginEnd="16sp"
+        android:textColorHint="@color/color_letras">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/minombre"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="20sp"></com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_nombre"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:gravity="left|center"
+        android:textColorHint="@color/color_letras"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_fecha"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mifecha"
+                android:inputType="date"
+
+                android:textSize="20sp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/fecha_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/back_fecha"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_calendario"
+            tools:targetApi="lollipop"></ImageButton>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_fecha"
+        android:layout_marginStart="16sp"
+        app:errorEnabled="true"
+        android:layout_marginEnd="16sp"
+        android:textColorHint="@color/color_letras">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mitelefono"
+            android:imeOptions="actionDone"
+            android:inputType="phone"></com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:errorEnabled="true"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/til_telefono"
+        android:textColorHint="@color/color_letras">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/miemail"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_email"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHint="@color/color_letras">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/boton_siguiente"
+            android:hint="@string/miDescripción"
+            android:imeOptions="actionDone"
+            android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/boton_siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_descripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/boton_main_activity"
+        android:theme="@style/Widget.AppCompat.Button.Borderless"></Button>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="minombre">Nombre Completo</string>
+    <string name="mi_nombre">Nombre Ejemplo</string>
+    <string name="mi_fecha_nacimiento">1993/05/15</string>
+    <string name="mifecha">Fecha de Nacimiento</string>
+    <string name="mitelefono">Numero de Telefono</string>
+    <string name="miemail">email</string>
+    <string name="miDescripción">Descripción</string>
+    <string name="mititulo">Formulario Registro Personas</string>
+    <string name="boton_main_activity">Siguiente</string>
+    <string name="confirmar_datos">Confirmar Datos </string>
+    <string name="miTel">Tel:</string>
+    <string name="fecha_nacimiento_datos">Fecha de Nacimiento:</string>
+    <string name="todo">TODO</string>
+    <string name="telefono_fict">1234567890</string>
+    <string name="email_datos">email:</string>
+    <string name="email_fict">email@email.com</string>
+    <string name="descripcion_datos">Descripcion:</string>
+    <string name="descrip_fict">Descricpion del usuario</string>
+    <string name="boton_datos">Editar Datos</string>
+
+
+</resources>
